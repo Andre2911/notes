@@ -20,7 +20,7 @@ public class DemoApplication {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
 				registry.addMapping("/**")
-						.allowedOrigins("http://localhost:5173")
+						.allowedOrigins("http://localhost:5173", "http://18.191.181.170:3000")
 						.allowedHeaders("*")
 						.allowedMethods("*")
 						.maxAge(3600);
